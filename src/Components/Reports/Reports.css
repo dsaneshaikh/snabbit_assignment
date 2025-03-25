@@ -11,13 +11,23 @@
 .main-white-container {
   display: flex;
   flex-direction: column;
-  height: 32.5rem;
+  height: 32.5rem; /* fixed for large screens */
   background: #fff;
   border: 0.0625rem solid #ddd;
   border-radius: 0.5rem;
   padding: 1rem;
   box-sizing: border-box;
   overflow: visible;
+}
+
+/* 
+   Media query to remove fixed height on smaller screens 
+   so the container can expand as needed 
+*/
+@media (max-width: 1024px) {
+  .main-white-container {
+    height: auto;
+  }
 }
 
 .reports-title-row {
@@ -418,7 +428,9 @@ thead {
   height: 1rem;
 }
 
-/* Responsive adjustments */
+/* Additional responsiveness for smaller breakpoints */
+
+/* If container is still too tall on narrower screens, override the height. */
 @media (max-width: 768px) {
   .main-white-container {
     height: auto;
