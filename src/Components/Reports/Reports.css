@@ -347,21 +347,27 @@ thead {
 .state-wrapper {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.5rem; /* Space between percentage text and bar */
+}
+
+.state-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space between the percentage text and bar */
 }
 
 .state-bar-bg {
   background: #e0e0e0;
-  width: 4rem;
-  height: 0.5rem;
+  width: 12rem; /* Adjust for desired width */
+  height: 0.625rem; /* Slightly taller bar for visibility */
   border-radius: 0.25rem;
   position: relative;
 }
 
 .state-bar-fill {
-  background: #28a745;
   height: 100%;
   border-radius: 0.25rem;
+  /* background is assigned dynamically in the component as a top-to-bottom gradient */
 }
 
 .logs-button {
