@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.sidebar {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 12.3rem;
+  height: calc(100vh - 3.75rem);
+  background-color: #e6eaf1;
+  border-right: 0.0625rem solid #ddd;
+  box-sizing: border-box;
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  padding: 1rem 0.5rem;
+  border-top: 0.0625rem solid #ddd;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  margin: 0.25rem 0;
+  color: #303030;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.nav-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.nav-item:hover {
+  background-color: #e8eaef;
+}
+
+.active-link {
+  background-color: #fff;
+  color: #212529;
+  font-weight: 500;
+  border-radius: 0.5625rem;
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.nav-item-parent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.25rem;
+  margin-top: 0.25rem;
+}
+
+.submenu-item {
+  display: block;
+  padding: 0.35rem 0.75rem;
+  margin: 0.25rem 0;
+  color: #54586d;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.submenu-item:hover {
+  background-color: #e8eaef;
+}
+
+.settings-link {
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 10rem;
+  }
+}
